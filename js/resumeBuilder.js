@@ -82,6 +82,20 @@ appendToWork(work.location, HTMLworkLocation);
 
 // BEGIN JSON OBJECT PRACTICE
 
+var bio = {
+	"name": "Justin Huynh",
+	"role": "Web Developer",
+	"welcomeMessage" : "Hi, welcome to my blog!",
+	"bioPic" : "images/me.jpg",
+	"contacts": {
+		"mobile": "951-310-8018",
+		"email": "J.alexhuyh@gmail.com",
+		"github": "Jalexhuynh",
+		"location": "Corona, CA"
+	},
+	"skills" : ["Programming", "Web Design", "Microbiology", "Graphic Design"]
+};
+
 var education = {
 	"schools":
 	[
@@ -115,4 +129,31 @@ var education = {
 			"url": "http://www.udacity.com/course/ud804"	
 		}
 	]
-}
+};
+
+var work = {
+	"jobs":
+	[
+		{
+			"employer": "La Jolla Institute for Allergy & Immunology",
+			"title": "Research Technician I",
+			"location": "San Diego, CA",
+			"dates": "DEC 2015 - JAN 2017",
+			"description": "Lorem Ipsum"
+		},
+		{
+			"employer": "USC Keck School of Medicine",
+			"title": "Research Technician I",
+			"location": "Los Angeles, CA",
+			"dates": "AUG 2015 - OCT 2015",
+			"description": "Lorem Ipsum"
+		},
+		{
+			"employer": "UCLA Bruin Cafe",
+			"title": "Barista",
+			"location": "Los Angeles, CA",
+			"dates": "SEP 2012 - JUN 2014",
+			"description": "Lorem Ipsum"
+		}
+	]
+};
