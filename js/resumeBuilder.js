@@ -1,3 +1,4 @@
+/*
 // Biographical Section
 
 var bio = {
@@ -58,7 +59,6 @@ appendToEducation(education.dates, HTMLschoolDates);
 appendToEducation(education.location, HTMLschoolLocation);
 appendToEducation(education.major, HTMLschoolMajor); 
 
-
 // Work History Section
 
 var work = {};
@@ -78,3 +78,41 @@ appendToWork(work.employer, HTMLworkEmployer);
 // appendToWork(work.title, HTMLworkTitle);
 appendToWork(work.dates, HTMLworkDates);
 appendToWork(work.location, HTMLworkLocation);
+*/
+
+// BEGIN JSON OBJECT PRACTICE
+
+var education = {
+	"schools":
+	[
+		{
+			"name": "University of California, Los Angeles",
+			"url": "http://www.ucla.edu/",
+			"location": "Los Angeles, CA",
+			"degree dates": "Bachelors of Science",
+			"major": ["Microbiology, Immunology, and Molecular Genetics"],
+			"years": "Fall 2011 - Spring 2015"
+		},
+		{
+			"name": "Mt. San Antonio College",
+			"url": "http://www.mtsac.edu/",
+			"location": "Walnut, CA",
+			"degree dates": "Professional Certificate",
+			"major": ["Web Programming"],
+			"years": "Currently Enrolled"
+		}
+	],
+	"onlineCourses":
+	[
+		{
+			"title": "How to Use Git and Github",
+			"school": "Udacity",
+			"url": "http://www.udacity.com/course/ud775"
+		},
+		{
+			"title": "J",
+			"school": "Udacity",
+			"url": "http://www.udacity.com/course/ud804"	
+		}
+	]
+}
