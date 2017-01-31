@@ -157,3 +157,50 @@ var work = {
 		}
 	]
 };
+
+var prependToHeader = function(item, how) {
+	$("#header").prepend(how.replace("%data%", item));
+};
+
+var appendToResume = function(item, how, where) {
+	$(where).append(how.replace("%data%", item));
+};
+
+prependToHeader(bio.role, HTMLheaderRole);
+prependToHeader(bio.name, HTMLheaderName);
+appendToResume(bio.contacts.mobile, HTMLmobile, "#topContacts");
+appendToResume(bio.contacts.email, HTMLemail, "#topContacts");
+appendToResume(bio.contacts.github, HTMLgithub, "#topContacts");
+appendToResume(bio.contacts.location, HTMLlocation, "#topContacts");
+appendToResume(bio.bioPic, HTMLbioPic, "#header");
+appendToResume(bio.welcomeMessage, HTMLwelcomeMsg, "#header");
+
+if(bio.skills.length > 0) {
+	$("#header").append(HTMLskillsStart);
+
+	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
+};
+
+var displayWork = function() {
+	for (job in work.jobs) {
+		$("#workExperience").append(HTMLworkStart);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+		var formattedEmployerTitle = formattedEmployer + formattedTitle;
+		$(".work-entry:last").append(formattedEmployerTitle);
+
+		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+		$(".work-entry:last").append(formattedDates);
+
+		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+		$(".work-entry:last").append(formattedDescription);
+	};
+};
+
+displayWork();
