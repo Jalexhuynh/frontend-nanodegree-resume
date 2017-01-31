@@ -139,21 +139,30 @@ var work = {
 			"title": "Research Technician I",
 			"location": "San Diego, CA",
 			"dates": "DEC 2015 - JAN 2017",
-			"description": "Lorem Ipsum"
+			"description": "Conducted research on human immune responses to Tuberculosis (TB) though ELISPOT assays" + 
+						   " analysis of Mucosal-Associate Invariant T (MAIT) cells by flow cytometry and in-vitro" + 
+						   " assays, as well as routinely isolating peripheral blood mononuclear cells (PBMCs) from" +
+						   " post-active TB or latent TB blood samples. Also assisted in maintaining lab inventory" +
+						   " of supplies, plasma/cell samples, and independently coordinating experiments with the PI."
 		},
 		{
 			"employer": "USC Keck School of Medicine",
 			"title": "Research Technician I",
 			"location": "Los Angeles, CA",
 			"dates": "AUG 2015 - OCT 2015",
-			"description": "Lorem Ipsum"
+			"description": "Processed HIV samples through RNA extractions of infected Plasma, PCR runs, and gel" + 
+						   " electrophoresis. Assisted in 454 sequencing, and led the design of PCR primers using" + 
+						   " python code to determine the best primer pair to use for amplification of pol and env" +
+						   " regions of HIV samples in a novel research project. "
 		},
 		{
 			"employer": "UCLA Bruin Cafe",
 			"title": "Barista",
 			"location": "Los Angeles, CA",
 			"dates": "SEP 2012 - JUN 2014",
-			"description": "Lorem Ipsum"
+			"description": "Managed and cooperated with team members to perform various assigned tasks, as well as" +
+						   " handle independent duties without requiring supervision. Also took charge of training" + 
+						   " new employees in performing their assigned positions. "
 		}
 	]
 };
