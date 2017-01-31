@@ -3,7 +3,8 @@
 var bio = {
 	"name": "Justin Huynh",
 	"role": "Web Developer",
-	"welcomeMessage" : "Hi, welcome to my blog!",
+	"welcomeMessage" : "I am a UCLA graduate with a degree in Microbiology, hoping to" +
+					   " switch fields into computer programming!",
 	"bioPic" : "images/me.jpg",
 	"contacts": {
 		"mobile": "951-310-8018",
