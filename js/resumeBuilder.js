@@ -11,7 +11,8 @@ var bio = {
 		"github": "Jalexhuynh",
 		"location": "Corona, CA"
 	},
-	"skills" : ["Programming", "Web Design", "Microbiology", "Graphic Design"]
+	"skills" : ["Programming", "Web Design", "Microbiology", "Graphic Design",
+				"Javascript", "HTML", "CSS", "Python", "Adobe Photoshop"]
 };
 
 var education = {
@@ -120,8 +121,7 @@ var displayEducation = function() {
 		$("#education").append(HTMLschoolStart);
 		var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[school].name).replace("#", education.schools[school].url);
 		var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-		var formattedSchoolEntry = formattedSchoolName + formattedSchoolDegree + formattedSchoolMajor;
+		var formattedSchoolEntry = formattedSchoolName + formattedSchoolDegree;
 		$(".education-entry:last").append(formattedSchoolEntry);
 
 		var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
@@ -129,6 +129,9 @@ var displayEducation = function() {
 
 		var formattedSchoolYears = HTMLschoolDates.replace("%data%", education.schools[school].years);
 		$(".education-entry:last").append(formattedSchoolYears);
+
+		var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
+		$(".education-entry:last").append(formattedSchoolMajor);
 	};
 };
 

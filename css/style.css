@@ -34,7 +34,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #606060;
   line-height: 29px;
   padding: 10px;
 }
@@ -129,7 +129,8 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #282828;
+  color: #fff;
 }
 
 .flex-box {
